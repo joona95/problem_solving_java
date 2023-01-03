@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class Problem_3_문장_속_단어 {

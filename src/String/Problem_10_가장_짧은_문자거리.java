@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class Problem_10_가장_짧은_문자거리 {

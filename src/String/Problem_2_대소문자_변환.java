@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class Problem_2_대소문자_변환 {

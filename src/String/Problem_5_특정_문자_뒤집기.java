@@ -1,9 +1,11 @@
+package String;
+
 import java.util.Scanner;
 
-public class Problem_8_유효한_팰린드롬 {
+public class Problem_5_특정_문자_뒤집기 {
     static String solution(String str) {
-        /*
-        char[] s = str.toUpperCase().toCharArray();
+        String answer = "";
+        char[] s = str.toCharArray();
         int lt = 0, rt = str.length() - 1;
         while (lt < rt) {
             if (!Character.isAlphabetic(s[lt])) {
@@ -14,22 +16,19 @@ public class Problem_8_유효한_팰린드롬 {
                 rt--;
                 continue;
             }
-            if (s[lt] != s[rt])
-                return "NO";
+            char tmp = s[lt];
+            s[lt] = s[rt];
+            s[rt] = tmp;
             lt++;
             rt--;
         }
-         */
-        str = str.toUpperCase().replaceAll("[^A-Z]", "");
-        String tmp = new StringBuilder(str).reverse().toString();
-        if(!str.equals(tmp))
-            return "NO";
-        return "YES";
+        answer = String.valueOf(s);
+        return answer;
     }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String str = in.nextLine();
+        String str = in.next();
         String result = solution(str);
         System.out.println(result);
     }
