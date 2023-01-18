@@ -3,7 +3,7 @@ package Map_Set;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Problemt_1_학급_회장_해쉬 {
+public class Problem_1_학급_회장_해쉬 {
     static char solution(int n, String str) {
         char answer=' ';
         HashMap<Character, Integer> map = new HashMap<>();
